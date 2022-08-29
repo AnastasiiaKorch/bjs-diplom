@@ -8,7 +8,7 @@ logoutButton.action = ()=>{
     });
 };
 
-ApiConnector.current = ((response)=>{
+ApiConnector.current((response)=>{
   if(response.success){
     ProfileWidget.showProfile(response.data);
   }
